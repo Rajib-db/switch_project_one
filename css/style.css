@@ -810,7 +810,7 @@ button:focus {
   color: #14193B;
   border: 1px solid #08AAEE;
   border-radius: 0.8rem;
-  background-image: url(/img/banner/arow_icon.svg);
+  background-image: url(/img/banner/arow.png);
 }
 
 .banner_content .banner_select_wrap .banner_select:focus {
