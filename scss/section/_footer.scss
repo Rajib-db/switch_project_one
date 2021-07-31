@@ -1,0 +1,79 @@
+/* footer css */
+.footer_padding{
+    padding-top: 12rem;
+}
+
+.footer_widget{
+    .widget_title{
+        margin-bottom: 2.5rem;
+    }
+
+    .widget_desc{
+        margin-bottom: 2.5rem;
+    }
+
+    .widget_contact{
+      .wsi_contact_item{
+          color: $secondary_color;
+          font-size: 1.8rem;
+          position: relative;
+          padding-left: 5rem;
+
+          &:not(:last-child){
+              margin-bottom: 3rem;
+          }
+
+          a{
+              display: block;
+          }
+      }
+
+      .widget_call,
+      .widget_mail{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 3.7rem;
+        height: 3.7rem;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 3.7rem;
+        color: $white;
+        font-size: 2rem;
+        background-color: $primary_color;
+    }
+    }
+
+    .footer_brand{
+        .brand_img{
+            display: inline-block;
+            width: 5.7rem;
+            height: 5.7rem;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 5.7rem;
+            background: $white;
+            &:not(:last-child){
+                margin-right: 1.2rem;
+            }
+
+            &:hover{
+                background-color: $primary_color;
+            }
+        }
+    }
+    @media #{$medium_device}{
+        margin-bottom: 5rem;
+    }
+    
+    @media #{$tab}{
+        margin-bottom: 6rem;
+    }
+}
+
+.copy_right{
+    padding: 3.5rem 0;
+    border-top: 1px solid $secondary_color;
+    margin-top: 4.5rem;
+    font-size: 2rem;
+}

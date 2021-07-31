@@ -1,0 +1,27 @@
+/* feature css */
+.feature_padding{
+    padding: 16rem 0;
+}
+.feature_item{
+    padding: 3.5rem;
+    .feature_img{
+        margin-bottom: 2.4rem;
+    }
+
+    .feature_content{
+        .f_title{
+            margin-bottom: 2.5rem;
+            text-transform: uppercase;
+
+            br{
+                @media #{$medium_device}{
+                    display: none;
+                }
+            }
+        }
+
+        .f_desc{
+            font-size: 1.6rem;
+        }
+    }
+}

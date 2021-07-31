@@ -1,0 +1,127 @@
+/******** bottom css ********/
+button:active {
+    outline: none;
+    border: none;
+}
+
+button:focus {
+    outline: 0;
+}
+
+.box_btn {
+    display: inline-block;
+    padding: 2rem 4rem;
+    line-height: 1;
+    text-transform: uppercase;
+    font-size: $body_font_size;
+    font-weight: weight(extra-bold);
+    border-radius: 4.7rem;
+    @include transform_time(.3s);
+    font-family: $heading_font;
+    text-align: center;
+
+    &.xl_btn {
+        width: 100%;
+    }
+
+    &.lg_btn {
+        padding: 2.2rem 4.2rem;
+
+    }
+
+    &.md_btn {
+        padding: 1.9rem 2.6rem;
+    }
+
+    &.xs_btn {
+        padding: 1.4rem 2.6rem;
+    }
+
+    &.btn_1 {
+        background-color: $btn_bg;
+        border: 1px solid $btn_bg;
+        color: $white;
+
+        &:hover {
+            background-color: $secondary_color;
+            border-color: $secondary_color;
+            color: $white;
+        }
+    }
+
+    &.btn_2 {
+        background-color: $btn_bg;
+        border: 1px solid $btn_bg;
+        color: $white;
+
+        &:hover {
+            background-color: $btn_bg;
+            border-color: $btn_bg;
+            color: $white;
+
+        }
+    }
+
+    &.btn_3 {
+        background-color: $btn_bg;
+        border: 1px solid $btn_bg;
+        color: $white;
+
+        &:hover {
+            background-color: $btn_bg;
+            border-color: $btn_bg;
+            color: $white;
+        }
+    }
+
+    &.btn_4 {
+        background-color: $btn_bg;
+        border: 1px solid $btn_bg;
+        color: $white;
+
+        &:hover {
+            background-color: $primary_color;
+            border-color: $primary_color;
+            color: $white;
+        }
+    }
+
+    &.btn_5 {
+        border: 1px solid rgba($color: $white, $alpha: .1);
+        color: $white;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        font-family: $heading_font;
+        padding: 17px 40px;
+
+        &:hover {
+            background-color: $base_color_1;
+            border-color: $base_color_1;
+        }
+    }
+
+    &.base_btn {
+        background-color: $base_color_1;
+        border: 2px solid $base_color_1;
+        color: $white;
+
+        &:hover {
+            background-color: $heading_color;
+            border-color: $heading_color;
+            color: $white;
+        }
+    }
+
+    &.white_btn {
+        background-color: $white;
+        border: 2px solid $white;
+        color: $heading_color;
+
+        &:hover {
+            border-color: $base_color_1;
+            color: $white;
+            background-color: $base_color_1;
+        }
+    }
+}

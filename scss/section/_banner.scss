@@ -1,0 +1,96 @@
+/* banner css */
+.banner_shape {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 26.5rem;
+
+    @media #{$extra_big_screen} {
+        width: 18rem;
+    }
+
+    @media #{$big_screen} {
+        width: 17.5rem;
+    }
+    @media #{$medium_device}{
+        width: 11rem;
+    }
+    @media #{$tab} {
+        display: none;
+    }
+}
+
+.banner_content {
+    margin-left: -18rem;
+
+    @media #{$extra_big_screen} {
+        margin-left: 0rem;
+    }
+
+    @media #{$big_screen} {
+        margin-left: 0;
+    }
+    @media #{$medium_device}{
+        margin-left: 0;
+    }
+    @media #{$tab} {
+        margin-left: 0;
+    }
+
+    .title {
+        text-transform: uppercase;
+        margin-bottom: 2.4rem;
+        @media #{$medium_device}{
+            font-size: 5rem;
+        }
+        @media #{$mobile} {
+            font-size: 6rem;
+        }
+
+        span {
+            color: $primary_color;
+            position: relative;
+        }
+    }
+
+    .text {
+        color: $heading_color;
+        font-size: 2.4rem;
+        font-weight: weight(medium);
+        margin-bottom: 3.5rem;
+    }
+
+    .banner_select_wrap {
+        margin-top: 3rem;
+        padding-right: 6rem;
+        @media #{$medium_device}{
+            padding-right: 0;
+        }
+        @media #{$mobile} {
+            padding-right: 0;
+        }
+
+        .banner_select {
+            padding: 3rem 3.5rem;
+            font-size: 2.8rem;
+            color: $heading_color;
+            border: 1px solid $primary_color;
+            border-radius: 0.8rem;
+            background-image: url(/img/banner/arow_icon.svg);
+
+            &:focus {
+                box-shadow: 0 0 0 0;
+            }
+            @media #{$medium_device}{
+                padding: 2rem 3.5rem; 
+            }
+            @media #{$mobile} {
+                padding: 2rem 3.5rem;
+            }
+        }
+    }
+}
+
+.banner_img {
+    margin-top: 7rem;
+}

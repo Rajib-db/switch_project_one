@@ -1,0 +1,95 @@
+// /* details css */
+.wsi_details_wrap {
+    @media #{$mobile} {
+        margin-bottom: 9rem;
+    }
+}
+
+.details_img {
+    padding: 7.5rem 0rem;
+
+    &.details_bg_1 {
+        position: relative;
+        z-index: 1;
+
+        &::after {
+            position: absolute;
+            top: 0;
+            left: -4900%;
+            content: "";
+            width: 5000%;
+            height: 100%;
+            background: $white;
+            z-index: -2;
+            border-radius: 0 4.7rem 0 0;
+        }
+    }
+
+    img {
+        @media #{$medium_device} {
+            padding-right: 2.2rem;
+        }
+
+        @media #{$tab_device} {
+            padding-right: 2.2rem;
+        }
+    }
+}
+
+.details_bg_2 {
+    .details_bg_1 {
+        &::after {
+            position: absolute;
+
+            left: auto;
+
+            right: -4896%;
+            background: $white;
+            z-index: -2;
+            border-radius: 0 0 0 4.7rem;
+        }
+
+        img {
+            @media #{$medium_device} {
+                padding-right: 0;
+                padding-left: 2.2rem;
+            }
+
+            @media #{$tab_device} {
+                padding-right: 0;
+                padding-left: 2.2rem;
+            }
+        }
+    }
+}
+
+.details_content {
+    &.det_content_2 {
+        margin-left: 0;
+        margin-right: 5rem;
+    }
+
+    margin-left: 5rem;
+
+    @media #{$big_screen} {
+        margin-left: 3rem;
+    }
+
+    @media #{$medium_device} {
+        margin-left: 2rem;
+    }
+
+    @media #{$tab} {
+        margin-left: 1rem;
+    }
+
+    .title {
+        text-transform: uppercase;
+        line-height: 1.2;
+        margin-bottom: 2.4rem;
+    }
+
+    .desc {
+        margin-bottom: 2.8rem;
+    }
+}

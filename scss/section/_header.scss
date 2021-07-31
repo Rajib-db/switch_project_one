@@ -1,0 +1,215 @@
+/* header top css */
+.swi_header_top {
+    padding: 1.7rem 0rem;
+
+    &.bg_color {
+        background-color: $bg_color;
+    }
+}
+
+.header_top_left {
+    .left_icon {
+        width: 2.7rem;
+        height: 2.7rem;
+        border-radius: 50%;
+        line-height: 2.7rem;
+        font-size: 1.2rem;
+        color: $white;
+        text-align: center;
+        background-color: $btn_bg;
+        margin-right: 0.9rem;
+    }
+
+    .phone {
+        color: $primary_color;
+        font-weight: weight(bold);
+        font-size: 1.3rem;
+        text-transform: uppercase;
+        display: inline-block;
+    }
+}
+
+.header_top_center {
+    @media #{$mobile} {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .reviews_start {
+        color: $start-color;
+        margin-right: 1rem;
+        font-size: 1.6rem;
+
+        i {
+            display: inline-block;
+        }
+    }
+
+    .rev_text {
+        color: $heading_color;
+        font-weight: weight(bold);
+        font-size: 1.3rem;
+        text-transform: uppercase;
+        display: inline-block;
+    }
+}
+
+.header_top_right {
+    .right_icon {
+        width: 2.7rem;
+        height: 2.7rem;
+        border-radius: 50%;
+        line-height: 2.7rem;
+        font-size: 1.2rem;
+        color: $white;
+        text-align: center;
+        background-color: $btn_bg;
+        margin-right: 0.9rem;
+    }
+
+    .right_text {
+        color: $heading_color;
+        font-weight: weight(bold);
+        font-size: 1.3rem;
+        text-transform: uppercase;
+        display: inline-block;
+    }
+}
+
+/* header bottom css */
+.sticky_header{
+    &.menu_fixed{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 3;
+    background: #fff;
+    box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.268);
+
+    .swi_h_padding {
+        padding: 1.5rem 0rem;
+    }
+    }
+}
+
+.swi_h_padding {
+    padding: 4.5rem 0rem;
+
+    @media #{$mobile} {
+        padding: 2rem 0rem;
+    }
+}
+
+.swi_header-bottom {
+    .navbar-nav {
+        position: relative;
+        z-index: 1;
+
+        .nav-item {
+            &:not(:last-child) {
+                margin-right: 5rem;
+
+                @media #{$extra_big_screen} {
+                    margin-right: 2rem;
+                }
+            }
+
+            margin-bottom: 2rem;
+
+            &:hover {
+                .nav-link {
+                    color: $primary_color;
+                }
+            }
+        }
+
+        .nav-link {
+            font-size: 1.6rem;
+            color: $heading_color;
+            text-transform: uppercase;
+            transition: .3s ease-in;
+
+            @media #{$tab} {
+                font-size: 2rem;
+            }
+        }
+    }
+
+    .shop_cart {
+        width: 6rem;
+        height: 6rem;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 6rem;
+        background: $secondary_color;
+    }
+
+    .navbar-toggler {
+        padding: 0;
+
+        &:focus {
+            box-shadow: 0 0 0 0;
+            border: none;
+        }
+
+        .toggle_bar {
+            width: 35px;
+            height: 5px;
+            background: $primary_color;
+            display: block;
+            margin: 6px;
+            @include transform_time(.3s);
+
+            &:nth-of-type(1) {
+                transform: rotate(45deg);
+                transform-origin: 10% 10%;
+            }
+
+            &:nth-of-type(2) {
+                opacity: 0;
+            }
+
+            &:nth-of-type(3) {
+                transform: rotate(-45deg);
+                transform-origin: 3% 75%;
+            }
+        }
+
+        &.collapsed {
+            .toggle_bar:nth-of-type(1) {
+                transform: rotate(0);
+            }
+
+            .toggle_bar:nth-of-type(2) {
+                opacity: 1;
+            }
+
+            .toggle_bar:nth-of-type(3) {
+                transform: rotate(0);
+            }
+        }
+
+    }
+
+    .navbar-collapse {
+        position: absolute;
+        top: 95px;
+        left: 0;
+        width: 100%;
+        background-color: $white;
+        z-index: 2;
+        padding: 50px 24px;
+
+        @media #{$big_device} {
+            position: inherit;
+            top: 0px;
+            left: 0;
+            width: 0;
+            background-color: $white;
+            z-index: 2;
+            padding: 0px 0px;
+        }
+    }
+}

@@ -1,0 +1,149 @@
+/* categores css */
+.pb-160 {
+    padding-bottom: 160px;
+
+    @media #{$mobile} {
+        padding-bottom: 5.6rem;
+    }
+}
+
+.row.plr_15>* {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    
+    @media #{$tab_device}{
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+    @media #{$mobile}{
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+
+    @media #{$wide_mobile}{
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
+}
+
+.row{
+    &.plr_15>{
+        @media #{$medium_device}{
+            .pl-15{
+                padding-left: 3rem;
+            }
+    
+            .pr-15{
+                padding-right: 3rem;
+            }
+        }
+    }
+}
+.cate_item {
+    background: #FAFAFA;
+    padding: 2.5rem;
+    border-radius: 1.6rem;
+    @media #{$big_screen}{
+        margin-bottom: 3rem;
+    }
+    @media #{$medium_device}{
+        margin-bottom: 3rem;  
+    }
+    @media #{$tab_device}{
+        margin-bottom: 3rem;
+    }
+    @media #{$mobile} {
+        padding: 2rem 0;
+        margin-bottom: 7.5rem;
+    }
+
+    .cate_table {
+        display: table;
+        width: 340px;
+        height: 340px;
+        margin: 0 auto;
+        background: $white;
+        border-radius: 1.6rem;
+        margin-bottom: 3.5rem;
+
+        @media #{$extra_big_screen} {
+            width: 270px;
+            height: 270px;
+        }
+
+        @media #{$mobile} {
+            width: 270px;
+            height: 270px;
+        }
+
+        @media #{$wide_mobile} {
+            width: 400px;
+            height: 400px;
+        }
+    }
+
+
+    .cate_thimb {
+        display: table-cell;
+        vertical-align: middle;
+
+        img {
+            @media #{$mobile} {
+                width: 200px;
+                height: 200px;
+                object-fit: cover;
+            }
+
+            @media #{$wide_mobile}{
+                width: 350px;
+                height: 350px;
+                object-fit: cover;
+            }
+        }
+
+        img{
+            @media #{$extra_big_screen}{
+                padding: 1.2rem;
+            }
+        }
+    }
+
+    .title {
+        text-transform: uppercase;
+        margin-bottom: 2.5rem;
+    
+        @media #{$extra_big_screen} {
+            font-size: 2.2rem;
+        }
+    
+        @media #{$tab} {
+            margin-bottom: 1rem;
+            ;
+        }
+    }
+}
+
+
+.cate_icon {
+    width: 7.3rem;
+    height: 7.3rem;
+    border-radius: 50%;
+    background: $white;
+    text-align: center;
+    margin: 0 auto;
+    transition: 0.3s ease-in-out;
+
+    i {
+        font-size: 3rem;
+        line-height: 7.3rem;
+        color: $primary_color;
+    }
+
+    &:hover {
+        background: $primary_color;
+
+        i {
+            color: $white;
+        }
+    }
+}
