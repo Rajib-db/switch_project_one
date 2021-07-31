@@ -848,7 +848,13 @@ button:focus {
 
 @media only screen and (min-width: 1400px) and (max-width: 1680px) {
   .servies_wrap {
-    max-width: 1440px;
+    max-width: 1385px;
+  }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1441px) {
+  .servies_wrap {
+    max-width: 1175px;
   }
 }
 
@@ -866,7 +872,7 @@ button:focus {
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
     gap: 3rem;
-    max-width: 830px;
+    max-width: 780px;
   }
 }
 
@@ -880,7 +886,7 @@ button:focus {
 
 @media only screen and (min-width: 480px) and (max-width: 767.98px) {
   .servies_wrap {
-    max-width: 488px;
+    max-width: 440px;
   }
 }
 
@@ -966,6 +972,13 @@ button:focus {
   }
 }
 
+@media only screen and (min-width: 768px) and (max-width: 991.98px) {
+  .row.plr_15 > {
+    padding-left: 0rem;
+    padding-right: 0rem;
+  }
+}
+
 @media only screen and (min-width: 992px) and (max-width: 1199.98px) {
   .row.plr_15 > .pl-15 {
     padding-left: 3rem;
@@ -1032,8 +1045,8 @@ button:focus {
 
 @media only screen and (min-width: 480px) and (max-width: 767.98px) {
   .cate_item .cate_table {
-    width: 400px;
-    height: 400px;
+    width: 380px;
+    height: 380px;
   }
 }
 

@@ -7,7 +7,11 @@
     grid-template-columns: 1fr 1fr 1fr 1fr;
     column-gap: 3rem;
     @media #{$extra_big_screen}{
-        max-width: 1440px;
+        max-width: 1385px;
+    }
+
+    @media #{$big_screen}{
+        max-width: 1175px;
     }
     @media #{$medium_device}{
         max-width: 1000px;
@@ -18,7 +22,7 @@
     @media #{$tab_device}{
         grid-template-columns: 1fr 1fr;
         gap: 3rem;
-        max-width: 830px;
+        max-width: 780px;
     }
     @media #{$mobile}{
         grid-template-columns: 1fr;
@@ -26,7 +30,7 @@
     }
 
     @media #{$wide_mobile}{
-        max-width: 488px;
+        max-width: 440px;
     }
 
 

@@ -10,48 +10,59 @@
 .row.plr_15>* {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
-    
-    @media #{$tab_device}{
-        padding-left: 3rem;
-        padding-right: 3rem;
-    }
-    @media #{$mobile}{
+
+    @media #{$tab_device} {
         padding-left: 3rem;
         padding-right: 3rem;
     }
 
-    @media #{$wide_mobile}{
+    @media #{$mobile} {
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+
+    @media #{$wide_mobile} {
         padding-left: 5rem;
         padding-right: 5rem;
     }
 }
 
-.row{
-    &.plr_15>{
-        @media #{$medium_device}{
-            .pl-15{
+.row {
+    &.plr_15> {
+        @media #{$tab_device} {
+            padding-left: 0rem;
+            padding-right: 0rem;
+        }
+
+        @media #{$medium_device} {
+            .pl-15 {
                 padding-left: 3rem;
             }
-    
-            .pr-15{
+
+            .pr-15 {
                 padding-right: 3rem;
             }
         }
     }
 }
+
 .cate_item {
     background: #FAFAFA;
     padding: 2.5rem;
     border-radius: 1.6rem;
-    @media #{$big_screen}{
+
+    @media #{$big_screen} {
         margin-bottom: 3rem;
     }
-    @media #{$medium_device}{
-        margin-bottom: 3rem;  
-    }
-    @media #{$tab_device}{
+
+    @media #{$medium_device} {
         margin-bottom: 3rem;
     }
+
+    @media #{$tab_device} {
+        margin-bottom: 3rem;
+    }
+
     @media #{$mobile} {
         padding: 2rem 0;
         margin-bottom: 7.5rem;
@@ -77,8 +88,8 @@
         }
 
         @media #{$wide_mobile} {
-            width: 400px;
-            height: 400px;
+            width: 380px;
+            height: 380px;
         }
     }
 
@@ -94,15 +105,15 @@
                 object-fit: cover;
             }
 
-            @media #{$wide_mobile}{
+            @media #{$wide_mobile} {
                 width: 350px;
                 height: 350px;
                 object-fit: cover;
             }
         }
 
-        img{
-            @media #{$extra_big_screen}{
+        img {
+            @media #{$extra_big_screen} {
                 padding: 1.2rem;
             }
         }
@@ -111,11 +122,11 @@
     .title {
         text-transform: uppercase;
         margin-bottom: 2.5rem;
-    
+
         @media #{$extra_big_screen} {
             font-size: 2.2rem;
         }
-    
+
         @media #{$tab} {
             margin-bottom: 1rem;
             ;
